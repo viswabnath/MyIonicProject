@@ -6,16 +6,27 @@ import { MyApp } from './app.component';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
+import {VlistPage} from '../pages/vlist/vlist';
+import {NvlistPage} from '../pages/nvlist/nvlist';
+import{AboutusPage} from '../pages/aboutus/aboutus';
+import{ PastordersPage} from'../pages/pastorders/pastorders';
+import{LogoutPage} from '../pages/logout/logout';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
+ 
 @NgModule({
-  declarations: [
+  declarations: [ 
     MyApp,
     HelloIonicPage,
     ItemDetailsPage,
-    ListPage
+    ListPage,
+    VlistPage,
+    NvlistPage ,
+    AboutusPage,
+    PastordersPage,
+    LogoutPage
+    
   ],
   imports: [
     BrowserModule,
@@ -26,7 +37,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HelloIonicPage,
     ItemDetailsPage,
-    ListPage
+    ListPage,
+    VlistPage,
+    NvlistPage,
+    AboutusPage,
+    PastordersPage,
+    LogoutPage
+    
   ],
   providers: [
     StatusBar,

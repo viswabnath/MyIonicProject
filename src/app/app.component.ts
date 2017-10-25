@@ -4,16 +4,21 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ListPage } from '../pages/list/list';
-
+import {NvlistPage} from '../pages/nvlist/nvlist';
+import {VlistPage} from '../pages/vlist/vlist';
+import{AboutusPage} from '../pages/aboutus/aboutus';
+import{ PastordersPage} from'../pages/pastorders/pastorders';
+import{LogoutPage} from '../pages/logout/logout';
+ 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html' 
 })
 export class MyApp {
-  @ViewChild(Nav) nav: Nav;
+  @ViewChild(Nav) nav: Nav; 
 
   // make HelloIonicPage the root (or first) page
   rootPage = HelloIonicPage;
@@ -24,13 +29,19 @@ export class MyApp {
     public menu: MenuController,
     public statusBar: StatusBar,
     public splashScreen: SplashScreen
-  ) {
+  ) { 
     this.initializeApp();
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'Home', component: HelloIonicPage  },
+      { title: 'Breakfast Menu', component: ListPage  },
+      { title: 'Vegetarian Menu (L & D)', component: VlistPage },
+      { title: 'Non-Vegetarian Menu (L & D)', component: NvlistPage },
+      {title: 'Past Orders',component:PastordersPage},
+      {title: 'About us',component:AboutusPage},
+      {title: 'Logout',component:LogoutPage}
+
     ];
   }
 

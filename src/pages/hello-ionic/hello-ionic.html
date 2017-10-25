@@ -3,23 +3,39 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Hello Ionic</ion-title>
+    <ion-title>Welcome</ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header> 
 
 
-<ion-content padding>
+<ion-content padding class="bg-image"> 
 
-  <h3>Welcome to your first Ionic app!</h3>
+    
+ <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+
+        
+  <h3>Thanks for choosing our Restuarant!</h3>
 
   <p>
-    This starter project is our way of helping you get a functional app running in record time.
+    We are providing our services to our valuable Customers since a Decade. We thank everyone for making us Sucess. 
   </p>
   <p>
-    Follow along on the tutorial section of the Ionic docs!
+    Choose your Order.
   </p>
   <p>
-    <button ion-button color="primary" menuToggle>Toggle Menu</button>
+    <button ion-button  default color="primary"menuToggle>Order Now </button>
   </p>
+  
+  
+
+<!--
+    <ion-icon name="logo-apple"></ion-icon>
+    <ion-icon  md="md-appstore"></ion-icon>
+    <ion-icon name="logo-facebook"></ion-icon>
+    <ion-icon name="logo-instagram"></ion-icon>
+    <ion-icon ios="ios-log-in" md="md-log-in"></ion-icon>
+    <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+    <ion-icon name="thumbs-up"></ion-icon>
+    <ion-icon name="logo-twitter"></ion-icon> -->
 
 </ion-content>
